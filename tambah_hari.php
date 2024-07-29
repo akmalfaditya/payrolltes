@@ -24,6 +24,11 @@ require_once 'koneksi.php';
                     <div class="card-body">
                         <h1 class="card-title text-center mb-4">Tambah Hari</h1>
 
+                        <center>
+                            <a href="index.php" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit"></i> Home
+                            </a>
+                        </center>
                         <form method="post" action="add_hari.php">
 
                             <div class="mb-3">

@@ -26,7 +26,11 @@ if (isset($_GET['id'])) {
                 <div class="card shadow">
                     <div class="card-body">
                         <h1 class="card-title text-center mb-4">Update Gaji Pegawai</h1>
-
+                        <center>
+                            <a href="index.php" class="btn btn-warning btn-sm">
+                                <i class="fas fa-edit"></i> Home
+                            </a>
+                        </center>
                         <form method="post" action="proses_update_gaji.php">
 
                             <input type="hidden" name="id" value="<?= $dt['id'] ?>">

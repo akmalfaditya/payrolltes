@@ -93,7 +93,7 @@ if (isset($_GET['id'])) {
                                 <tbody>
                                     <?php
                                             // $search = $_POST['nama_barang'];
-                                            $q = $conn->query("SELECT master_gaji.id, master_pegawai.id, master_pegawai.nama, master_gaji.gaji_pokok, master_gaji.denda_keterlambatan  FROM master_gaji  JOIN master_pegawai ON master_gaji.pegawai_id = master_pegawai.id WHERE master_pegawai.id = $id");
+                                            $q = $conn->query("SELECT master_gaji.id, master_pegawai.id as pegawai_id, master_pegawai.nama, master_gaji.gaji_pokok, master_gaji.denda_keterlambatan  FROM master_gaji  JOIN master_pegawai ON master_gaji.pegawai_id = master_pegawai.id WHERE master_pegawai.id = $id");
                                             $no = 1;
                                             while ($dt = $q->fetch_assoc()) :
                                             ?>
